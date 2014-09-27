@@ -8,3 +8,43 @@
     .make-sm-column(@main-sm-columns - @sidebar-sm-columns);
   }
 }
+
+//Post list styling
+.post-header {
+  height: floor((4 * @line-height-computed));
+  overflow: hidden;
+}
+.post-entry-summary {
+  height: floor(4 * @line-height-computed);
+  overflow: hidden;
+}
+
+@media (max-width: @screen-sm-min) {
+  .post-header {
+    height: floor(2 * @line-height-computed);
+    overflow: hidden;
+  }
+  .post-entry-summary {
+    height: floor(2 * @line-height-computed);
+    overflow: hidden;
+  }
+}
+
+// Post thumbnail styling
+figure.post-thumbnail {
+  height:300px;
+  overflow: hidden;
+}
+
+img.attachment-post-thumbnail {
+  width: auto !important;
+  height: 100% !important;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+

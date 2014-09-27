@@ -18,6 +18,8 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  set_post_thumbnail_size( 300, 300, true);
+  // add_image_size( $name, $width, $height, $crop );
 
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
@@ -41,8 +43,8 @@ function roots_widgets_init() {
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>',
   ));
 
   register_sidebar(array(
