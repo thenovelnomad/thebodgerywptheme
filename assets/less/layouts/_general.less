@@ -2,6 +2,40 @@
 .wrap { }
 
 // Main content area
+.banner {
+  .container-fluid {
+    overflow: hidden;
+    padding: 0;
+  }
+}
+#logo {
+  margin-left: -5%;
+  width: 110%;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  background-position-x: center;
+  background-position-y: center;
+
+  img {
+    padding: 10px;
+  }
+
+  #tools {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    background-color: @subheadings-color;
+    color: @body-bg;
+    font-size: @font-size-base;
+    border: none;
+    border-radius: 0px;
+  }
+}
 .main {
   .make-sm-column(@main-sm-columns);
   .sidebar-primary & {
@@ -10,6 +44,9 @@
 }
 
 //Post list styling
+article.post {
+  margin: 10px 0;
+}
 .post-header {
   height: floor((4 * @line-height-computed));
   overflow: hidden;

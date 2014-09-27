@@ -1,13 +1,8 @@
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
-    <header>
-      <!-- TODO add logo -->
-      <div class="row">
-        <a class="pull-right"><span>Donate Button</span><a>
-      </div>
-      <div class="row">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BodgeryLogo2.png" alt="" width="200px" class="center-block">
-      </div>
+  <div class="container-fluid">
+    <header id="logo" class="row">
+      <a id="tools" class="btn btn-primary h6" href="http://wiki.thebodgery.org/doku.php?id=equipment" target="_blank">Tools</a>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BodgeryLogo2.png" alt="" width="100px" class="center-block">
     </header>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,7 +11,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
