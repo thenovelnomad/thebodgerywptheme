@@ -9,6 +9,14 @@
 <?php endif; ?>
 <section class="row">
   <div class="col-xs-12">
+    <h2>Welcome to the Bodgery</h2>
+    <p><em>"To Bodge: to make or repair hastily, to MacGyver"</em></p>
+    <p>A makerspace and social group for makers in Madison, WI. We are a member-run group, pitching in our time and resources to build up Madison's maker community.</p>
+    <p>And you can help!  If you have tools you'd like to share with the community, check <a href="http://wiki.thebodgery.org/doku.php?id=wish_list" target="_blank">our Wishlist</a> on the wiki.  You can also make a <a href="http://thebodgery.org/donations/" target="_blank">financial donation</a> if that's more your speed.  And thanks!</p>
+  </div>
+</section>
+<section class="row">
+<div class="col-xs-12">
   <?php while (have_posts()) : the_post(); ?>
     <?php get_template_part('templates/content', get_post_format()); ?>
   <?php endwhile; ?>
