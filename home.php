@@ -9,7 +9,7 @@
 <?php endif; ?>
 <section class="row">
   <div class="col-xs-12">
-    <h2>Welcome to the Bodgery</h2>
+    <h2 class="title">Welcome to the Bodgery</h2>
     <?php include('templates/switch.php'); ?>
     <p><em>"To Bodge: to make or repair hastily, to MacGyver"</em></p>
     <p>A makerspace and social group for makers in Madison, WI. We are a member-run group, pitching in our time and resources to build up Madison's maker community.</p>
