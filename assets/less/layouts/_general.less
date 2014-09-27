@@ -1,6 +1,31 @@
 // Content wrapper
 .wrap { }
 
+body {
+}
+
+footer {
+  padding: 10px;
+  font-family: @headings-font-family;
+  font-weight: 200;
+  color: rgb(210,181,61);
+  background: rgb(64,112,127);
+
+  a {
+    color: rgb(210,181,61) !important;
+  }
+
+  .margin-top {
+    margin-top: 20px;
+  }
+}
+
+.wrap.container {
+background: @body-bg;
+padding-top: 25px;
+margin-top: -25px;
+}
+
 // Main content area
 .banner {
   .container-fluid {
@@ -36,6 +61,11 @@
     border-radius: 0px;
   }
 }
+
+.navbar-default .navbar-collapse {
+  padding: 0 10px !important;
+}
+
 .main {
   .make-sm-column(@main-sm-columns);
   .sidebar-primary & {
@@ -58,7 +88,7 @@ article.post {
 
 @media (max-width: @screen-sm-min) {
   .post-header {
-    height: floor(2 * @line-height-computed);
+    height: 50px;
     overflow: hidden;
   }
   .post-entry-summary {
@@ -82,6 +112,27 @@ img.attachment-post-thumbnail {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+// List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled  ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline ul {
+  .list-unstyled();
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 49%;
+  }
 }
 
 

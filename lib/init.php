@@ -50,10 +50,10 @@ function roots_widgets_init() {
   register_sidebar(array(
     'name'          => __('Footer', 'roots'),
     'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s text-center">',
+    'before_widget' => '<section class="widget %1$s %2$s list-inline list-unstyled">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h5>',
-    'after_title'   => '</h5>',
+    'before_title'  => '<h6>',
+    'after_title'   => '</h6>',
   ));
 }
 add_action('widgets_init', 'roots_widgets_init');
