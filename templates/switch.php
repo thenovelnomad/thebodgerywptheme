@@ -32,6 +32,7 @@
     background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
+    margin: auto;
   }
   #tv-block #tv {
     position: absolute;
