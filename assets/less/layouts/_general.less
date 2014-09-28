@@ -50,15 +50,19 @@ margin-top: -25px;
     padding: 10px;
   }
 
-  #tools {
+  a#tools {
     position: absolute;
-    top: 0%;
+    top: -8%;
     right: 10%;
     background-color: @subheadings-color;
     color: @body-bg;
     font-size: @font-size-base;
     border: none;
     border-radius: 0px;
+
+    &:hover {
+      background-color: darken(@subheadings-color, 15%);
+    }
   }
 }
 
