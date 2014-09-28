@@ -12,7 +12,6 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-
     <nav class="collapse navbar-collapse" role="navigation">
       <?php
         if (has_nav_menu('primary_navigation')) :
