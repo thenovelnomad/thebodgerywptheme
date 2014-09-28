@@ -104,6 +104,11 @@ function sendAJAX(url, method, callback, data, headers) {
     }
   }
   function checkStatus() {
+    ///////TODO: change URL for production ///////
+    ///////TODO: change URL for production ///////
+    ///////TODO: change URL for production ///////
+    ///////TODO: change URL for production ///////
+    ///////TODO: change URL for production ///////
     sendAJAX('http://localhost/bodgery/misc/checkstatus.php', 'GET', function (resp) {
       if (resp.status === 200) {
         var data = JSON.parse(resp.responseText);
