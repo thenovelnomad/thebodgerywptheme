@@ -3,4 +3,3 @@
 node_modules
 assets/vendor/*
 assets/js/vendor/modernizr.min.js
-assets/manifest.json
