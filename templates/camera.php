@@ -2,48 +2,7 @@
   /***************************************
   * Generic AJAX handler for DRYness
   ***************************************/
-  function sendAJAX(url, method, callback, data, headers) {
-    try {
-      var xhReq = new XMLHttpRequest(),
-        xhTimeout = setTimeout(function () {xhReq.abort();}, 45000);
-      if (method !== "POST" && method !== "GET" && method !== "PUT" && method !== "DELETE") {
-        return false;
-      }
-      xhReq.open(method, url);
-      if (typeof(headers) != "undefined") {
-        for (var i = 0; i < headers.headers.length; i++) {
-          xhReq.setRequestHeader(headers.headers[i].type, headers.headers[i].value);
-        }
-      }
-      xhReq.onreadystatechange = function () {
-        if (xhReq.readyState != 4) return;
-        clearTimeout(xhTimeout);
-        callback(xhReq);
-      };
-      if (xhReq.readyState === 4 ) return xhReq;
-      xhReq.send(data);
-    } catch (ex) {
-      catchError(ex);
-    }
-  }
-  function checkStatus() {
-    sendAJAX('http://localhost/bodgery/misc/checkstatus.php', 'GET', function (resp) {
-      if (resp.status === 200) {
-        var data = JSON.parse(resp.responseText);
-        if (data && (data.status === "1")) {
-          $status.className = 'open';
-        } else {
-          $status.className = 'closed';
-        }
-      }
-    });
-  }
-  window.setInterval(checkStatus, 30000);
-  var $status = {};
-  document.addEventListener('DOMContentLoaded', function () {
-    $status = document.getElementById('statusSign');
-    checkStatus();
-  });
+
 </script>
 
 <a href="/camera-feed">
