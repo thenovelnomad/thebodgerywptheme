@@ -19,7 +19,7 @@
       </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <aside class="sidebar" role="complementary">
-          <?php include('templates/camera.php'); ?>
+          <section class="hidden-xs text-center row"><?php include('templates/camera.php'); ?></section>
           <?php include roots_sidebar_path(); ?>
         </aside><!-- /.sidebar -->
       <?php endif; ?>

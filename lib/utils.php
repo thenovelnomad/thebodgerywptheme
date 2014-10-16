@@ -17,7 +17,7 @@ add_filter('get_search_form', 'roots_get_search_form');
 
 // Add custom excerpt length
 function custom_excerpt_length( $length ) {
-  return 15;
+  return 40;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 

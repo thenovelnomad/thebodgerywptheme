@@ -23,7 +23,7 @@
 @green: #69744d;
 @dark-green: #394439;
 @yellow: #e2b80c;
-@rust: #bf4616;
+@brand-font: #45140f;
 
 
 // Glyphicons path
@@ -37,11 +37,12 @@
 
 //** Background color for `<body>`.
 @body-bg:               #fff;
+
 //** Global text color on `<body>`.
 @text-color:            #666666;
 
 //** Global textual link color.
-@link-color:            @rust;
+@link-color:            @brand-font;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 
@@ -50,10 +51,10 @@
 //## Font, line-height, and color for body text, headings, and more.
 
 @font-family-sans-serif:  "Open Sans", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-serif:       'Averia Serif Libre', cursive;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;  
+@font-family-base:        @font-family-serif;  
 
 @font-size-base:          16px;
 @font-size-large:         24px; // ~24px
@@ -67,12 +68,12 @@
 @font-size-h6:            24px; // 
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    "Roboto", Futura, "Trebuchet MS", Arial, sans-serif;
-@headings-font-weight:    900;
+@headings-font-family:    'Averia Serif Libre', cursive;
+@headings-font-weight:    700;
 @headings-line-height:    1.1;
-@headings-color:          @rust;
+@headings-color:          @brand-font;
 
-@subheadings-font-family:    "Roboto Condensed", Futura, "Trebuchet MS", Arial, sans-serif;
+@subheadings-font-family:   'Averia Serif Libre', cursive;
 @subheadings-font-weight:    700;
 @subheadings-line-height:    1.1;
-@subheadings-color:          @rust;
+@subheadings-color:          @brand-font;

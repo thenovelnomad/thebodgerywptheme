@@ -23,7 +23,7 @@
       <div class="col-sm-4 text-center">
         <div class="row">Email List</div>
         <div class="row"><input type="email"></div>
-        <div class="row"><a href="/wp-login" class="small">Admin Login</a></div>
+        <div class="row"><a href="/wp-login.php" class="small">Admin Login</a></div>
       </div>
     </div>
     <div class="row text-center">
