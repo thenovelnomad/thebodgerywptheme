@@ -2204,10 +2204,10 @@ function sendAJAX(url, method, callback, data, headers) {
     ///////TODO: change URL for production ///////
     ///////TODO: change URL for production ///////
     ///////TODO: change URL for production ///////
-    sendAJAX('http://localhost/bodgery/misc/checkstatus.php', 'GET', function (resp) {
+    sendAJAX('/wp-content/themes/bodgery-theme/bodgery_open_status.txt', 'GET', function (resp) {
       if (resp.status === 200) {
         var data = JSON.parse(resp.responseText);
-        if (data && (data.status === "1")) {
+        if (data && (data == "1")) {
           $status.className = 'open';
         } else {
           $status.className = 'closed';
