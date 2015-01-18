@@ -2204,7 +2204,7 @@ function sendAJAX(url, method, callback, data, headers) {
     ///////TODO: change URL for production ///////
     ///////TODO: change URL for production ///////
     ///////TODO: change URL for production ///////
-    sendAJAX('/wp-content/themes/bodgery-theme/bodgery_open_status.txt', 'GET', function (resp) {
+    sendAJAX('/bodgery_open_status.txt', 'GET', function (resp) {
       if (resp.status === 200) {
         var data = JSON.parse(resp.responseText);
         if (data && (data == "1")) {
